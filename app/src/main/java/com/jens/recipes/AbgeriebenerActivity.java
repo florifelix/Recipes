@@ -17,7 +17,7 @@ public class AbgeriebenerActivity extends RecipeActivity {
         // Instantiate a ViewPager2 and a PagerAdapter.
         viewPager = findViewById(R.id.pager);
         FragmentStateAdapter pagerAdapter = new ScreenSlidePagerAdapter(this,
-                R.drawable.pizzacalzone111,
+                R.drawable.dorade111,
                 "abgeriebenerIngredients.html",
                 "abgeriebenerRecipe.html"
         );
