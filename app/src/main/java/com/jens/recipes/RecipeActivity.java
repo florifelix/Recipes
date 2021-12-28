@@ -44,13 +44,13 @@ public class RecipeActivity extends AppCompatActivity {
                 (tab, position) -> {
                     switch (position) {
                         case 0:
-                            tab.setText("Bild");
-                            break;
-                        case 1:
                             tab.setText("Zutaten");
                             break;
-                        case 2:
+                        case 1:
                             tab.setText("Rezept");
+                            break;
+                        case 2:
+                            tab.setText("Bild");
                             break;
                     }
                 }).attach();
@@ -72,18 +72,18 @@ public class RecipeActivity extends AppCompatActivity {
 
             switch (position) {
                 case 0:
-                    selectedFragment = new PictureFragment();
-                    bundle.putInt("picture", myPicture);
-                    selectedFragment.setArguments(bundle);
-                    break;
-                case 1:
                     selectedFragment = new WebViewFragment();
                     bundle.putString("fileName", myIngredients);
                     selectedFragment.setArguments(bundle);
                     break;
-                default:
+                case 1:
                     selectedFragment = new WebViewFragment();
                     bundle.putString("fileName", myRecipe);
+                    selectedFragment.setArguments(bundle);
+                    break;
+                default:
+                    selectedFragment = new PictureFragment();
+                    bundle.putInt("picture", myPicture);
                     selectedFragment.setArguments(bundle);
             }
             return selectedFragment;

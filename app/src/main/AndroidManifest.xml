@@ -11,10 +11,10 @@
         android:theme="@style/Theme.Recipes">
 
         <activity
-            android:name=".EierlikörActivity"
+            android:name=".AdvocaatActivity"
             android:parentActivityName=".DessertsActivity" />
         <activity
-            android:name=".AbgeriebenerActivity"
+            android:name=".PoundCakeActivity"
             android:parentActivityName=".DessertsActivity" />
         <activity
             android:name=".SpaghettiCarbonaraActivity"

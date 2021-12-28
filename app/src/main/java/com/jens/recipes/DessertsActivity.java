@@ -16,13 +16,13 @@ public class DessertsActivity extends AppCompatActivity {
 
         final Button eierlikörButton = findViewById(R.id.buttonEierlikör);
         eierlikörButton.setOnClickListener(view -> {
-            Intent gotoSecond = new Intent(DessertsActivity.this, EierlikörActivity.class);
+            Intent gotoSecond = new Intent(DessertsActivity.this, AdvocaatActivity.class);
             startActivity(gotoSecond);
         });
 
         final Button abgeriebenerButton = findViewById(R.id.buttonAbgeriebener);
         abgeriebenerButton.setOnClickListener(view -> {
-            Intent gotoSecond = new Intent(DessertsActivity.this, AbgeriebenerActivity.class);
+            Intent gotoSecond = new Intent(DessertsActivity.this, PoundCakeActivity.class);
             startActivity(gotoSecond);
         });
 

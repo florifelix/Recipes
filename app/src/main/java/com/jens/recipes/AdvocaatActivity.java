@@ -5,21 +5,21 @@ import android.widget.TextView;
 
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-public class AbgeriebenerActivity extends RecipeActivity {
+public class AdvocaatActivity extends RecipeActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         TextView titleView = findViewById(R.id.title);
-        titleView.setText("Abgeriebener");
+        titleView.setText("Eierlikör");
 
         // Instantiate a ViewPager2 and a PagerAdapter.
         viewPager = findViewById(R.id.pager);
         FragmentStateAdapter pagerAdapter = new ScreenSlidePagerAdapter(this,
                 R.drawable.dorade111,
-                "abgeriebenerIngredients.html",
-                "abgeriebenerRecipe.html"
+                "advocaatIngredients.html",
+                "advocaatRecipe.html"
         );
         viewPager.setAdapter(pagerAdapter);
         //viewPager.setPageTransformer(new ZoomOutPageTransformer());
