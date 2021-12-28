@@ -59,6 +59,7 @@ public class MainsActivity extends AppCompatActivity {
         ActionBar sab = getSupportActionBar();
         if (sab != null) {
             sab.setDisplayHomeAsUpEnabled(true);
+            sab.setTitle("Hauptgerichte");
         }
     }
 }

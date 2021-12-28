@@ -29,6 +29,7 @@ public class DessertsActivity extends AppCompatActivity {
         ActionBar sab = getSupportActionBar();
         if (sab != null) {
             sab.setDisplayHomeAsUpEnabled(true);
+            sab.setTitle("Nachtisch und Kuchen");
         }
     }
 }

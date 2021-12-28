@@ -15,6 +15,7 @@ public class SaladsActivity extends AppCompatActivity {
         ActionBar sab = getSupportActionBar();
         if (sab != null) {
             sab.setDisplayHomeAsUpEnabled(true);
+            sab.setTitle("Salate");
         }
     }
 }

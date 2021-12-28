@@ -14,5 +14,6 @@ public class SoupsActivity extends AppCompatActivity {
 
         ActionBar sab = getSupportActionBar();
         if (sab != null) sab.setDisplayHomeAsUpEnabled(true);
+        sab.setTitle("Suppen");
     }
 }
