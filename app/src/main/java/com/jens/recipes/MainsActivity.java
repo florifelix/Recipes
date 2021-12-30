@@ -56,6 +56,12 @@ public class MainsActivity extends AppCompatActivity {
             startActivity(gotoSecond);
         });
 
+        final Button hamRollsButton = findViewById(R.id.buttonHamRolls);
+        hamRollsButton.setOnClickListener(view -> {
+            Intent gotoSecond = new Intent(MainsActivity.this, HamRollsActivity.class);
+            startActivity(gotoSecond);
+        });
+
         ActionBar sab = getSupportActionBar();
         if (sab != null) {
             sab.setDisplayHomeAsUpEnabled(true);

@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(gotoSecond);
         });
 
-        final Button dessertsButton = findViewById(R.id.buttonDesserts);
+        final Button dessertsButton = findViewById(R.id.buttonCakes);
             dessertsButton.setOnClickListener(view -> {
-            Intent gotoSecond = new Intent(MainActivity.this, DessertsActivity.class);
+            Intent gotoSecond = new Intent(MainActivity.this, CakesActivity.class);
             startActivity(gotoSecond);
         });
     }

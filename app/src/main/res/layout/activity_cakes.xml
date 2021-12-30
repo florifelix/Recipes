@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DessertsActivity">
+    tools:context=".CakesActivity">
 
   <Button
       android:id="@+id/buttonEierlikör"
@@ -13,7 +13,7 @@
       android:text="Eierlikör"
       android:textAppearance="@style/TextAppearance.AppCompat.Large"
       android:textSize="40sp"
-      app:backgroundTint="@android:color/holo_orange_dark"
+      app:backgroundTint="@android:color/holo_red_light"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.5"
       app:layout_constraintStart_toStartOf="parent"
@@ -26,9 +26,33 @@
       android:text="Abgeriebener"
       android:textAppearance="@style/TextAppearance.AppCompat.Large"
       android:textSize="40sp"
-      app:backgroundTint="@android:color/holo_orange_dark"
+      app:backgroundTint="@android:color/holo_red_light"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.5"
       app:layout_constraintTop_toBottomOf="@id/buttonEierlikör" />
+
+  <Button
+      android:id="@+id/buttonRoastedAlmonds"
+      android:layout_width="409dp"
+      android:layout_height="wrap_content"
+      android:text="Gebrannte Mandeln"
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      android:textSize="40sp"
+      app:backgroundTint="@android:color/holo_red_light"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintTop_toBottomOf="@id/buttonAbgeriebener" />
+
+  <Button
+      android:id="@+id/buttonSweetandSourPumpkin"
+      android:layout_width="409dp"
+      android:layout_height="wrap_content"
+      android:text="Kürbiskompott süß-sauer"
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      android:textSize="40sp"
+      app:backgroundTint="@android:color/holo_red_light"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintTop_toBottomOf="@id/buttonRoastedAlmonds" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
